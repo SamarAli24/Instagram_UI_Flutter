@@ -1,0 +1,59 @@
+import 'package:flutter/material.dart';
+import 'package:project/Widget/bottombar.dart';
+import 'package:project/Widget/story.dart';
+
+
+class Home extends StatelessWidget {
+  const Home({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    
+    
+    
+    return Scaffold(
+     
+   
+      appBar: AppBar(
+        
+        backgroundColor: Colors.black,
+      
+        leading: Icon(Icons.camera_alt_rounded ,
+        size:35,
+        color: Colors.grey[600],
+        
+        
+        ),
+       
+ 
+
+        title: Text('Instagram' ,
+        style: TextStyle(
+          decoration: TextDecoration.none,
+          fontFamily:'Billabong',
+          fontSize:30,
+          
+        ),
+        ),
+       
+       actions: [
+         IconButton(icon:
+          Icon(Icons.call_missed_outgoing_sharp , 
+          size: 30,),
+          
+          onPressed: (){}
+          ),
+       ],
+      
+        ),
+
+        body: StoryWidget(),
+        
+    bottomNavigationBar: BottombarWidget(),
+
+    );
+
+    
+    
+  }
+}
